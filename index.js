@@ -15,8 +15,8 @@ client.on("ready", () => {
   for (const token of auth.Tokens) {
     const client = new Discord.Client()
     client.on('ready', () => {
-        console.log(`${client.user.tag} hazır!`)
-        console.log(`${client.user.tag} adlı botun ID'si: ${client.user.id}`)
+        console.log(`Logged in as ${client.user.tag}!`)
+        console.log(`Logged in as ${client.user.tag} bot ID: ${client.user.id}`)
         client.channels.get("790562550663741448").join().then(console.log(`${client.user.tag} sesli kanalına giriş yaptı.`));
     })
     client.login(token)
